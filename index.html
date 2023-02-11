@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./styles/estilos.css">
+    <link rel="icon" href="img/favicon.ico" type="ico" sizes="16x16">
+    <meta name="description" content="diagnóstico por imagenes en la Plata">
+    <meta name="keywords" content="DIAGNOSTICO, IMAGENES, TOMOGRAFIA, RESONANCIA, MAGNETICA, ELECTROCARDIOGRAMA, ANALISIS, LABORATORIO">
     <title>CADI - Centro Argentino de Diagnostico por Imagenes</title>
+    
 </head>
 <body>
     <!--barra inicia-->
@@ -40,7 +44,7 @@
     <!--carrusel-->
     
     <div class="sec">
-      <div id="demo" class="carousel slide" data-ride="carousel">
+      <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
 
         <!-- Indicators -->
         <ul class="carousel-indicators">
@@ -53,16 +57,24 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/carrusel1.jpg" alt="tomografo" cover width="100%">
+            <img src="img/carrusel1.jpg" class="img-fluid" alt="tomografo" cover width="100%">
+            <div class="carousel-caption d-block d-block-flex p-2 bg-dark text-white">
+              <h2>Tecnología de Ultima Generación</h2>
+              <p>Somos el Centro de Diagnóstico por Imagenes con los equipos más avanzados y completos del país</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="img/carrusel2.jpg" alt="tomografo2" cover width="100%">
+            <img src="img/carrusel2.jpg" class="img-fluid" alt="tomografo avanzado" cover width="100%">
           </div>
           <div class="carousel-item">
-            <img src="img/carrusel3.jpg" alt="doctores" cover width="100%">
+            <img src="img/carrusel3.jpg"class="img-fluid" alt="doctores diagnosticando una radiografia" cover width="100%">
+            <div class="carousel-caption d-block d-block-flex p-2 bg-dark text-white">
+              <h2>Profesionales Calificados</h2>
+              <p>Contamos con un staff de profesionales capacitados constantemente para brindar el mejor servicio</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="img/carrusel4.jpg" alt="tomografo3" cover width="100%">
+            <img src="img/carrusel4.jpg" class="img-fluid" alt="tomografo3" cover width="100%">
           </div>
         </div>
       
@@ -81,39 +93,39 @@
     <div class="container-fluid">
       <section class="row">
         <h1 class="col-12 text-center titulo1">Centro Argentino de Diagnóstico por Imagenes</h1>
-        <article class="col-sm-6 text-center articulo2">
-          <p>En CADI, somos un grupo profesional, técnico y administrativo capacitado para la atención y contención del paciente.</p>
-          <p>El staff médico integra un equipo multidicisplinario en diagnóstico por imágenes y medicina nuclear con permanente actualización científica que permite la interpretación de las imágenes médicas de los sistemas integrados entre sí para obtener un diagnóstico preciso.</p>
-        </article>
-        <img class="col-sm-6 img-fluid imagen1" src="img/cadi.jpg" alt="Foto de nuestro centro de imagenes">
+          <article class="col-lg-5 text-center articulo1">
+            <p>En CADI, somos un grupo profesional, técnico y administrativo capacitado para la atención y contención del paciente.</p>
+            <p>El staff médico integra un equipo multidicisplinario en diagnóstico por imágenes y medicina nuclear con permanente actualización científica que permite la interpretación de las imágenes médicas de los sistemas integrados entre sí para obtener un diagnóstico preciso.</p>
+          </article>
+          <img class="col-lg-7 img-fluid imagen1" src="img/cadi.jpg" alt="Foto de nuestro centro de imagenes">
         <h2 class="col-12 text-center titulo2">Nuestra Misión</h2>
-        <img class="col-sm-6 img-fluid imagen2" src="img/nuestramision.jpg" alt="Tomografia computada">
-        <article class="col-sm-6 text-center articulo2">
-          <p>Queremos satisfacer plenamente las necesidades de nuestros pacientes aplicando para ello los criterios de calidad en todas sus dimensiones. Procuramos ofrecer las mejores instalaciones y equipamiento tecnológico posible, para permitir que todo el personal médico y no médico cumpla su cometido cabalmente, como así también contribuir al desarrollo del conocimiento médico en beneficio de la comunidad.</p>
-        </article>
-
+          <img class="col-lg-7 img-fluid imagen2" src="img/nuestramision.jpg" alt="Tomografia computada">
+          <article class="col-lg-5 text-center articulo2">
+            <p>Queremos satisfacer plenamente las necesidades de nuestros pacientes aplicando para ello los criterios de calidad en todas sus dimensiones. Procuramos ofrecer las mejores instalaciones y equipamiento tecnológico posible, para permitir que todo el personal médico y no médico cumpla su cometido cabalmente, como así también contribuir al desarrollo del conocimiento médico en beneficio de la comunidad.</p>
+          </article>
       </section>
     </div>
 
     <!--fin articulo-->
     <!--footer-->
-    <footer class="container-fluid footer">
+    <footer class="container-fluid text-center footer">
       <section class="row">
-      <div class="redes col-sm-6">
+      <div class="contactosf col col-lg-4">
         <h3>CADI</h3>
-        <i class="fa-solid fa-location-pin"> Calle 28 N° 18888, La Plata</i>
-        </br>
-        <i class="fa-sharp fa-solid fa-phone">  Centro de Atencion: 221-659-99222</i>
-        </br>
-        <i class="fa-brands fa-whatsapp">  Whatsapp: 221-555-66678</i>
-        <h3>Nuestras Redes</h3>
-        <i class="fa-brands fa-facebook">  Centro_CADI</i>
-        </br>
-        <i class="fa-brands fa-instagram">  Centro_CADI</i>
+        <i class="col fa-solid fa-location-pin">Calle 28 N° 18888, La Plata</i>
+        <i class="col fa-sharp fa-solid fa-phone">  Centro de Atencion: 221-659-99222</i>
+        <i class="col fa-brands fa-whatsapp">  Whatsapp: 221-555-66678</i>
       </div>
-        <p class="col-sm-6 text-center">Toda la información y los elementos incluidos en este web site: fotografías, diseño, isologos, etc no pueden ser reproducidos, utilizados, adaptados o comercializados sin la aprobación escrita de CADI.</p>
+      <div class="contactosf col col-lg-4">
+        <h3>Nuestras Redes</h3>
+        <i class="col fa-brands fa-facebook">  Centro_CADI</i>
+        <i class="col fa-brands fa-instagram">  Centro_CADI</i>
+      </div>
+      <div class="contactosf col col-lg-4">
+        <p class="col text-center derechos">Toda la información y los elementos incluidos en este web site: fotografías, diseño, isologos, etc no pueden ser reproducidos, utilizados, adaptados o comercializados sin la aprobación escrita de CADI®.</p>
+      </div>  
       </section>
-        <div class="map-responsive">
+        <div class="mapag map-responsive">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1635.1576049534933!2d-57.95321756878591!3d-34.94870752121418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e88cdfdf5b4d%3A0x4fd51794a1b21e06!2sC.%2069%201663%2C%20B1904%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1674837993201!5m2!1ses-419!2sar" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
